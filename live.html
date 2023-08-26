@@ -853,35 +853,35 @@
             <div class="scontent-filter-group">
                 <div class="scontent-filter-bar">
                     <label class="ck_filter animated active" data-filter="all">
-                        <input type="checkbox" name="inputFilter" value="Sexy">
+                        <input type="checkbox" name="inputFilter" value="cat0" checked>
                         <span class="checkmark"></span>
                         <img src="images/game-logo/sexy.png">
                         <span>Sexy</span>
                     </label>
 
                     <label class="ck_filter animated" data-filter="cat0">
-                        <input type="checkbox" name="inputFilter" value="Evolution">
+                        <input type="checkbox" name="inputFilter" value="cat1" checked>
                         <span class="checkmark"></span>
                         <img src="images/game-logo/evo.png">
                         <span>Evolution</span>
                     </label>
 
                     <label class="ck_filter animated" data-filter="cat1">
-                        <input type="checkbox" name="inputFilter" value="PP">
+                        <input type="checkbox" name="inputFilter" value="cat2" checked>
                         <span class="checkmark"></span>
                         <img src="images/game-logo/pp.png">
                         <span>PP</span>
                     </label>
 
                     <label class="ck_filter animated" data-filter="cat2">
-                        <input type="checkbox" name="inputFilter" value="Venus" >
+                        <input type="checkbox" name="inputFilter" value="cat3" checked>
                         <span class="checkmark"></span>
                         <img src="images/game-logo/venus.png">
                         <span>Venus</span>
                     </label>
 
                     <label class="ck_filter animated" data-filter="cat3">
-                        <input type="checkbox" name="inputFilter" value="PT">
+                        <input type="checkbox" name="inputFilter" value="cat4" checked>
                         <span class="checkmark"></span>
                         <img src="images/game-logo/playtech.png">
                         <span>PT</span>
@@ -1349,20 +1349,42 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
-            $('.ck_filter').click(function () {
-                const value = $(this).attr('data-filter');
-                if (value == 'all') {
-                    $('.ck_bx').show('1000');
-                }
-                else {
-                    $('.ck_bx').not('.' + value).hide('1000');
-                    $('.ck_bx').filter('.' + value).show('1000');
-                }
-            })
+            var games = $('.ck_box').children();
 
-            $('.ck_filter').click(function () {
-                $(this).addClass('active'); //.siblings().removeClass('active');
-            })
+            $('input[name="inputFilter"]').click(function () {
+                if ($(this).is(':checked')) {
+                    var cat = $(this).val();
+
+                    games.each(function (idx, val) {
+                        if ($(this).hasClass(cat)) {
+                            $(this).show();
+                        }
+                    });
+                } else {
+                    var cat = $(this).val();
+
+                    games.each(function (idx, val) {
+                        if ($(this).hasClass(cat)) {
+                            $(this).hide();
+                        }
+                    });
+                }
+            });
+
+            //$('.ck_filter').click(function () {
+            //    const value = $(this).attr('data-filter');
+            //    if (value == 'all') {
+            //        $('.ck_bx').show('1000');
+            //    }
+            //    else {
+            //        $('.ck_bx').not('.' + value).hide('1000');
+            //        $('.ck_bx').filter('.' + value).show('1000');
+            //    }
+            //})
+
+            //$('.ck_filter').click(function () {
+            //    $(this).addClass('active'); //.siblings().removeClass('active');
+            //})
         })
     </script>
 
