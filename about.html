@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <script>
+
+        if (screen.width <= 780) {
+            document.location = "mobile/index2.html"
+        }
+
+       
+    </script>
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="lightslider.css">
+        <link rel="stylesheet" href="slick.css">
+        <link rel="stylesheet" href="slick-theme.css">
+        <script src="https://kit.fontawesome.com/7ccf57b82d.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" type="image/png" href="images/favicon-1.png">
+
+        <title>Mr.Softtech</title>
+
+    </head>
+
+<body>
+
+    <!-- MODAL -->
+
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="lgn" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <h5 class="modal-title" >Welcome to Baji</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+    
+                    <div class="modal-body">
+                        <nav class="login_form" style="display: flex; text-align: center;justify-content: center; grid-gap: 20px;">
+                            <div class="nav nav-tabs login-tab" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-id-tab" data-bs-toggle="tab" data-bs-target="#nav-id" type="button" role="tab" aria-controls="nav-id" aria-selected="true">
+                                    <i class="fa-solid fa-envelope-circle-check"></i>
+                                    ID / Email
+                                </button>
+    
+                                <button class="nav-link" id="nav-phone-tab" data-bs-toggle="tab" data-bs-target="#nav-phone" type="button" role="tab" aria-controls="nav-phone" aria-selected="false">
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    Phone
+                                </button>
+                            </div>
+                        </nav>
+    
+                        <div class="login_form tab-content" id="nav-tabContent">
+    
+                            <div class="tab-pane fade show active" id="nav-id" role="tabpanel" aria-labelledby="nav-id-tab">
+                                <div class="login-form-inner">
+                                    <div class="form-group">
+                                        <label>ID / Email</label>
+    
+                                        <div class="login-input">
+                                            <img src="images/icon-user.png">
+                                            <input type="text" name="username" placeholder="ID or Email" required>
+                                        </div>
+                                    </div>
+    
+                                    <div class="form-group">
+                                        <label>Password</label>
+    
+                                        <div class="login-input">
+                                            <img src="images/icon-pass.png">
+                                            <input type="password"  placeholder="Password" required class="form-control" >
+                                            <i class="toggle-password fa-solid fa-eye-slash"></i>
+                                        </div>
+                                    </div>
+    
+                                    <a href="forgot.html" class="login-forgetpass">Forgotten Password</a>
+    
+                                    <div class="form-group">
+                                        <a href="index(login).html" type="submit" class="btn-css2">
+                                            <span>Login Now</span>
+                                        </a>
+                                    </div>     
+    
+                                    <p>
+                                        <a href="register.html">Don't have account? Signup now</a>
+                                    </p>                      
+    
+                                </div>
+                            </div>
+    
+                            <div class="tab-pane fade" id="nav-phone" role="tabpanel" aria-labelledby="nav-phone-tab">
+                                <div class="login-form-inner">
+                                    <div class="form-group">
+                                        <label>Phone number</label>
+    
+                                        <div class="login-input1">
+                                            <img src="images/icon-user.png">
+                                            <input type="text" value="+88" class="field mb-2 me-1 form-control disabled" style="width: 90px;" disabled>
+                                            <div class="number-left">
+                                                <input type="number" name="username" placeholder="Phone number" required>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="form-group">
+                                        <label>Password</label>
+    
+                                        <div class="login-input1">
+                                            <img src="images/icon-pass.png">
+                                            <input type="password"  placeholder="Password" required class="form-control">
+                                            <i class="toggle-password2 fa-solid fa-eye-slash"></i>
+                                        </div>
+                                    </div>
+    
+                                    <a href="forgot.html" class="login-forgetpass">Forgotten Password</a>
+    
+                                    <div class="form-group">
+                                        <a href="index(login).html" type="submit" class="btn-css2">
+                                            <span>Login Now</span>
+                                        </a>
+                                    </div>     
+    
+                                    <p>
+                                        <a href="register.html">Don't have account? Signup now</a>
+                                    </p>                      
+    
+                                </div>
+                            </div>
+                                
+                        </div>
+    
+                    </div>
+             
+                </div>
+            </div>
+    </div>
+    
+    <!-- MODAL CLOSED -->
+
+    <div class="site-wrap">
+        <div class="site-header">
+
+            <div class="sheader-top">
+                <div class="sheader-center">
+
+                    <div class="sheader-date">
+                        <span>(GMT+08:00) 
+                            <span id="clock">17:37:04</span>
+                        </span>
+
+                        <a href="#" class="sheader-lang loader1">
+                            <img src="images/country-logo.png">
+                            <span> English </span>
+                        </a>
+                    </div>
+
+                    <div class="sheader-social">
+                        <a href="#">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Whatsapp
+                        </a>
+                        
+                        <a href="#">
+                            <i class="fa-regular fa-envelope"></i>
+                           Email
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                            Facebook
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sheader-main">
+                <div class="sheader-center">
+                    <a href="index.html" class="sheader-logo">
+                        <img src="images/logo_baji.png">
+                    </a>
+
+                    <div class="sheader-right">
+                        <div class="sheader-login">
+                            <a class="btn-css1 loader1" data-bs-toggle="modal" data-bs-target="#login">
+                                <span>Login</span>
+                            </a>
+                        
+                            <a href="register.html" class="btn-css2 ">
+                                <span>Sign Up</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sheader-nav">
+                <div class="sheader-center">
+                    <div class="sheader-menu">
+
+                            <div class="main-sub ">
+                                <a href="#" class="nav-item active">
+                                    <img src="images/home2_active.png">
+                                </a>
+                            </div>
+
+                            <div class="main-sub">
+                                <a href="#" class="nav-item active">
+                                    <img src="images/mobile_active.png">
+                                </a>
+                            </div>
+                            <div class="more-icon left" id="moreicon-left">
+                                <i class="fa-solid fa-angles-left"></i>
+                            </div>
+                        <ul>                            
+
+                            <li class="drop-box">
+                                <a href="#" class="nav-item">
+                                    Sports
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+
+                                <div class="nav-drop-box">
+                                    <div class="nav-drop-slider owl-carousel owl-theme">
+
+                                        <div class="item active">
+                                            <div class="slide-item">
+                                                <a href="#" >
+                                                    <h5>Exchange</h5>
+                                                    <img src="images/exchange.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="#" >
+                                                    <h5>SBO Sports</h5>
+                                                    <img src="images/sbosport.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="#" >
+                                                    <h5>Sportsbook</h5>
+                                                    <img src="images/sportbook.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="#" >
+                                                    <h5>Virtual</h5>
+                                                    <img src="images/virtual.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="#" >
+                                                    <h5>Kabaddi</h5>
+                                                    <img src="images/kabaddi.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="#" >
+                                                    <h5>Horse Racing</h5>
+                                                    <img src="images/horseracing.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="#" >
+                                                    <h5>BJ Sports</h5>
+                                                    <img src="images/bjsports.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <li class="drop-box">
+                                <a href="#" class="nav-item">
+                                    Casino
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+
+                                <div class="nav-drop-box">
+                                    <div class="nav-drop-slider owl-carousel owl-theme">
+
+                                        <div class="item active">
+                                            <div class="slide-item">
+                                                <a href="casino.html" >
+                                                    <h5>Exchange</h5>
+                                                    <img src="images/exchange.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="casino.html" >
+                                                    <h5>SBO Sports</h5>
+                                                    <img src="images/sbosport.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="casino.html" >
+                                                    <h5>Sportsbook</h5>
+                                                    <img src="images/sportbook.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="casino.html" >
+                                                    <h5>Virtual</h5>
+                                                    <img src="images/virtual.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="casino.html" >
+                                                    <h5>Kabaddi</h5>
+                                                    <img src="images/kabaddi.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="casino.html" >
+                                                    <h5>Horse Racing</h5>
+                                                    <img src="images/horseracing.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="casino.html" >
+                                                    <h5>BJ Sports</h5>
+                                                    <img src="images/bjsports.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <li class="drop-box">
+                                <a href="#" class="nav-item">
+                                    Slots
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+
+                                <div class="nav-drop-box">
+                                    <div class="nav-drop-slider owl-carousel owl-theme">
+
+                                        <div class="item active">
+                                            <div class="slide-item">
+                                                <a href="slot.html" >
+                                                    <h5>Exchange</h5>
+                                                    <img src="images/exchange.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="slot.html" >
+                                                    <h5>SBO Sports</h5>
+                                                    <img src="images/sbosport.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="slot.html" >
+                                                    <h5>Sportsbook</h5>
+                                                    <img src="images/sportbook.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="slot.html" >
+                                                    <h5>Virtual</h5>
+                                                    <img src="images/virtual.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="slot.html" >
+                                                    <h5>Kabaddi</h5>
+                                                    <img src="images/kabaddi.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="slot.html" >
+                                                    <h5>Horse Racing</h5>
+                                                    <img src="images/horseracing.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="slot.html" >
+                                                    <h5>BJ Sports</h5>
+                                                    <img src="images/bjsports.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </li>      
+ 
+                            <li class="drop-box">
+                                <a href="#" class="nav-item">
+                                    Table
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+
+                                <div class="nav-drop-box">
+                                    <div class="nav-drop-slider owl-carousel owl-theme">
+
+                                        <div class="item active">
+                                            <div class="slide-item">
+                                                <a href="table.html" >
+                                                    <h5>Exchange</h5>
+                                                    <img src="images/exchange.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="table.html" >
+                                                    <h5>SBO Sports</h5>
+                                                    <img src="images/sbosport.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="table.html" >
+                                                    <h5>Sportsbook</h5>
+                                                    <img src="images/sportbook.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="table.html" >
+                                                    <h5>Virtual</h5>
+                                                    <img src="images/virtual.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="table.html" >
+                                                    <h5>Kabaddi</h5>
+                                                    <img src="images/kabaddi.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="table.html" >
+                                                    <h5>Horse Racing</h5>
+                                                    <img src="images/horseracing.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="table.html" >
+                                                    <h5>BJ Sports</h5>
+                                                    <img src="images/bjsports.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <li class="drop-box">
+                                <a href="#" class="nav-item">
+                                    Fishing
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+
+                                <div class="nav-drop-box">
+                                    <div class="nav-drop-slider owl-carousel owl-theme">
+
+                                        <div class="item active">
+                                            <div class="slide-item">
+                                                <a href="fishing.html" >
+                                                    <h5>Exchange</h5>
+                                                    <img src="images/exchange.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="fishing.html" >
+                                                    <h5>SBO Sports</h5>
+                                                    <img src="images/sbosport.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="fishing.html" >
+                                                    <h5>Sportsbook</h5>
+                                                    <img src="images/sportbook.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="fishing.html" >
+                                                    <h5>Virtual</h5>
+                                                    <img src="images/virtual.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="fishing.html" >
+                                                    <h5>Kabaddi</h5>
+                                                    <img src="images/kabaddi.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="fishing.html" >
+                                                    <h5>Horse Racing</h5>
+                                                    <img src="images/horseracing.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="fishing.html" >
+                                                    <h5>BJ Sports</h5>
+                                                    <img src="images/bjsports.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <li class="drop-box">
+                                <a href="#" class="nav-item">
+                                    Arcade
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+
+                                <div class="nav-drop-box">
+                                    <div class="nav-drop-slider owl-carousel owl-theme">
+
+                                        <div class="item active">
+                                            <div class="slide-item">
+                                                <a href="arcade.html" >
+                                                    <h5>Exchange</h5>
+                                                    <img src="images/exchange.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="arcade.html" >
+                                                    <h5>SBO Sports</h5>
+                                                    <img src="images/sbosport.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="arcade.html" >
+                                                    <h5>Sportsbook</h5>
+                                                    <img src="images/sportbook.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="arcade.html" >
+                                                    <h5>Virtual</h5>
+                                                    <img src="images/virtual.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="arcade.html" >
+                                                    <h5>Kabaddi</h5>
+                                                    <img src="images/kabaddi.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="arcade.html" >
+                                                    <h5>Horse Racing</h5>
+                                                    <img src="images/horseracing.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="slide-item">
+                                                <a href="arcade.html" >
+                                                    <h5>BJ Sports</h5>
+                                                    <img src="images/bjsports.png">
+                                                    <span>PLAY NOW</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </li>
+                            
+                            <li>
+                                <a href="promotion.html" class="nav-item">
+                                    Promotion
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="vip.html" class="nav-item">
+                                    VIP
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="dailyreward.html" class="nav-item">
+                                   Daily Reward
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="entertainment.html" class="nav-item">
+                                    Entertainment
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="rewards.html" class="nav-item">
+                                    Rewards
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="tournament.html" class="nav-item">
+                                    Tournaments
+                                </a>
+                            </li>
+                            <li>
+                                <a href="luckyspin.html" class="nav-item">
+                                     Lucky Spin
+                                </a>
+                            </li>
+                            <li>
+                                <a href="suggestion.html" class="nav-item">
+                                    Suggestion
+                                </a>
+                            </li>
+
+                        </ul> 
+
+                        <div class="more-icon right" id="moreicon-right">
+                            <i class="fa-solid fa-angles-right"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- Right side widget -->
+
+        <div class="side-slider contact-service-box">
+            <button class="slide-btn">
+                <img src="images/cs-title-en.png">
+            </button>
+
+            <div class="side-slider-content">
+                <div class="contact-service-icon">
+                    <img src="images/cs-247.png">
+                </div>
+
+                <div class="contact-service-logo">
+                    <img src="images/logo.png">
+                </div>
+
+                <ul id="side-cs-cont" class="contact-service-list">
+                    <li id="cs-42" class="icon-whatsapp">
+                        <a target="_blank">
+                            <img src="images/image_81.png" ui-key="realIconPath">
+                            <span ui-key="displayText">Whatsapp</span>
+                            <img class="qr-code" src="images/icon-code-black.png">
+                        </a>
+                        <img class="contact-service-qrcode" src="images/image_1004.png" ui-key="realQrCodePath">
+                        <hr>
+                    </li>
+                    <li id="cs-43" class="icon-mail">
+                        <a target="_blank" href="#">
+                            <img src="images/image_86.png" ui-key="realIconPath">
+                            <span ui-key="displayText">Email</span>
+                            <img class="qr-code" src="images/icon-code-black.png">
+                        </a>
+                        <img class="contact-service-qrcode" src="images/image_1004.png" ui-key="realQrCodePath">
+                        <hr>
+                    </li>
+                    <li id="cs-47" class="icon-fb">
+                        <a target="_blank">
+                            <img src="images/image_91.png" ui-key="realIconPath">
+                            <span ui-key="displayText">Facebook</span>
+                            <img class="qr-code" src="images/icon-code-black.png">
+                        </a>
+                        <img class="contact-service-qrcode" src="images/image_1004.png" ui-key="realQrCodePath">
+                        <hr>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Right side widget -->
+
+        <div class="content">
+            <div class="aboutus-wrap container-1200">
+
+                <div class="d-flex align-items-start">
+
+                    <div class="aboutus-tab-wrap">
+                        <div class="aboutus-tab-group nav flex-column nav-pills " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                            <a class="aboutus-tab-link nav-link active" id="v-pills-about-tab" data-bs-toggle="pill" data-bs-target="#v-pills-about" role="tab" aria-controls="v-pills-about" aria-selected="true"> About Us </a>
+    
+                            <a class="aboutus-tab-link nav-link" id="v-pills-privacy-tab" data-bs-toggle="pill" data-bs-target="#v-pills-privacy"  role="tab" aria-controls="v-pills-privacy" aria-selected="false"> Privacy Policy </a>
+                        
+                            <a class="aboutus-tab-link nav-link" id="v-pills-tnc-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tnc" role="tab" aria-controls="v-pills-tnc" aria-selected="false"> Terms and Conditions </a>
+    
+                            <a class="aboutus-tab-link nav-link" id="v-pills-rg-tab" data-bs-toggle="pill" data-bs-target="#v-pills-rg" role="tab" aria-controls="v-pills-rg" aria-selected="false"> Responsible Gaming </a>
+
+                            <a class="aboutus-tab-link nav-link" id="v-pills-eighteen-tab" data-bs-toggle="pill" data-bs-target="#v-pills-eighteen" role="tab" aria-controls="v-pills-eighteen" aria-selected="false"> 18+ </a>
+
+                            <a class="aboutus-tab-link nav-link" id="v-pills-kyc-tab" data-bs-toggle="pill" data-bs-target="#v-pills-kyc" role="tab" aria-controls="v-pills-kyc" aria-selected="false"> KYC </a>
+    
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="v-pills-tabContent">
+
+                        <div class="tab-pane fade show active" id="v-pills-about" role="tabpanel" aria-labelledby="v-pills-about-tab">
+                            <div class="aboutus-body" >
+                                <div class="article-content"> 
+                                    <h2 class="article-content-title">About Us </h2>
+
+                                    <div class="article-detail">
+                                        <h4 class="article-detail-tile"> About Baji </h4>
+
+                                        <div class="article-detail-content">
+                                            <p class="text">
+                                                Mr.Softtech is a top-notch online gambling brand in Asia. We focused primarily on offering Betting Exchange on cricket and tennis which allow our
+                                                valuable players bet against other people and get great odds on hundreds of markets everyday!
+                                            </p>
+                                            <p class="text">
+                                                We are committed to create a safe, stable, fair and reliable gambling environment for our players to enjoy the supreme gaming experience.
+                                            </p>
+                                        </div>
+
+                                        <h4 class="article-detail-tile"> Safe & Private Environment </h4>
+
+                                        <div class="article-detail-content">
+                                            <p class="text">
+                                                MRST cooperates with the world’s top network security and uses the highest quality security system together with a 128-bit encryption to ensure all your transactions as well as privacy of your data are safe and secure. We promise to keep all of your information strictly confidential and private
+                                            </p>
+                                        </div>
+
+                                        <h4 class="article-detail-tile"> Customer Support </h4>
+
+                                        <div class="article-detail-content">
+                                            <p class="text">
+                                                Our highly trained customer support team available 24 hours a day, 7 days a week, offer efficient and dedicated support to help to answer your queries and assists on any of your issues.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-privacy" role="tabpanel" aria-labelledby="v-pills-privacy-tab">
+                            <div class="aboutus-body" >
+                                <div class="article-content"> 
+                                    <h2 class="article-content-title">Privacy Policy </h2>
+
+                                    <div class="article-detail">
+                                        <div class="article-detail-content">
+                                            <p class="text">
+                                                Your privacy is important to us, and we are committed to protecting your personal information. We will be clear and open about why we collect your personal information and how we use it. Where you have choices or rights, we will explain these to you.
+                                            </p>
+                                            <p class="text">
+                                                This Privacy Policy explains how Baji uses your personal information when you are using one of our website.
+                                            </p>
+                                        </div>
+
+                                        <h4 class="article-detail-tile"> Who is in control of your information?</h4>
+
+                                        <div class="article-detail-content">
+                                            <p class="text">
+                                                Throughout this Privacy Policy, Baji together with our subsidiaries and affiliates (collectively, “we” or “us” or “our”) control the ways your Personal Data is collected and the purposes for which your Personal Data is used by Baji, acting as the “data controller” for the purposes of applicable European data protection legislation.
+                                            </p>
+                                        </div>
+
+                                        <h4 class="article-detail-tile"> Our Data Protection Officer </h4>
+
+                                        <div class="article-detail-content">
+                                            <p class="text">
+                                                If you have concerns or would like any further information about how Baji handles your personal information, you can contact our Data Protection Officer at info@baji.live.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-kyc" role="tabpanel" aria-labelledby="v-pills-kyc-tab">
+                            <div class="aboutus-body" >
+                                <div class="article-content"> 
+                                    <h2 class="article-content-title">KYC Policy of BJ. </h2>
+
+                                    <div class="article-detail">
+                                        <div class="article-detail-content">
+                                            <p class="text">
+                                                Country is not a Restricted Country: United States of America and its territories, France and its territories, Netherlands and its territories and countries that form the Kingdom of Netherlands including Bonaire, Sint Eustatius, Saba, Aruba, Curacao and Sint Maarten, Australia and its territories, United Kingdom of Great Britain, Northern Ireland, Spain.
+                                            </p>
+                                            <p class="text">
+                                                Country is not a Restricted Country: United States of America and its territories, France and its territories, Netherlands and its territories and countries that form the Kingdom of Netherlands including Bonaire, Sint Eustatius, Saba, Aruba, Curacao and Sint Maarten, Australia and its territories, United Kingdom of Great Britain, Northern Ireland, Austria, Germany, Spain, and Cyprus.
+                                            </p>
+                                        </div>
+
+                                        <h4 class="article-detail-tile"> Notes on the “KYC Process”</h4>
+
+                                        <div class="article-detail-content">
+                                            <p class="text">
+                                                When the KYC process is unsuccessful then the reason is documented and a support ticket is created in the system. The ticket number along with an explanation is communicated back to the user.
+                                            </p>
+                                        </div>
+
+                                        <h4 class="article-detail-tile"> “Other AML measures”</h4>
+
+                                        <div class="article-detail-content">
+                                            <p class="text">
+                                                If a user has not passed full KYC then they cannot make additional deposits or withdrawals of any amount.
+                                                There is a deposit limit per transaction (max EUR 2,000)
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-rg" role="tabpanel" aria-labelledby="v-pills-rg-tab">
+                            <div class="aboutus-body" >
+                                <div class="article-content"> 
+                                    <h2 class="article-content-title">Responsible Gaming </h2>
+
+                                    <div class="article-detail">
+                                        <div class="article-detail-content">
+                                            <p class="text">
+                                                The words of which the initial letter is capitalized have meanings defined under the following conditions.
+                                                The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+                                            </p>
+                                            <p class="text">
+                                                For the purposes of these Terms and Conditions:
+                                                Account means a unique account created for You to access our Service or parts of our Service.
+                                                Company (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Curacao Co
+                                                Service refers to the Website.
+                                            </p>
+                                        </div>
+
+                                        <h4 class="article-detail-tile"> Responsible Gambling and Self Exclusion</h4>
+
+                                        <div class="article-detail-content">
+                                            <p class="text">
+                                                Gambling means for the majority of our Users, entertainment, fun and excitement. But we also know that for some of our Users gambling has negative side effects. In the medical science is pathologic gambling since many years as serious sickness recognised.
+                                            </p>
+                                        </div>
+
+                                        <h4 class="article-detail-tile"> Minor Protection </h4>
+
+                                        <div class="article-detail-content">
+                                            <p class="text">
+                                                To use our Service, You have to be 18 years or older. To avoid abuse, keep Your login data save from any minors near You.
+                                                Principally we recommend a filter program to avoid minors, especially children, to access any context on the internet, which is not healthy for them.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-eighteen" role="tabpanel" aria-labelledby="v-pills-eighteen-tab">
+                            <div class="aboutus-body" >
+                                <div class="article-content"> 
+                                    <h2 class="article-content-title">For age 18 and above only </h2>
+
+                                    <div class="article-detail">
+                                        <div class="article-detail-content">
+                                            <p class="text">
+                                                Baji is only made available to customers aged 18 and above only. The act of a customer under the age of 18 opening an account and/or gambling on Baji is considered as an offence. Baji carries out age-verifications and reserves the right to carry out such verifications at our own discretion.
+                                            </p>
+                                            <p class="text">
+                                                Note: IF ANY CUSTOMERS BELOW 18 YEARS OF AGE IS FOUND USING Baji, THE COMPANY RESERVES THE RIGHTS TO REPORT IT TO THE POLICE AND FORFEIT ALL WINNINGS.
+                                            </p>
+                                        </div>
+
+                                        <h4 class="article-detail-tile">Filtering Systems </h4>
+
+                                        <div class="article-detail-content">
+                                            <p class="text">
+                                                Baji strongly encourages and advises all its customers to ensure that minors would not access any e-gaming websites.
+                                            </p>
+                                        </div>
+
+                                        <div class="article-detail-content">
+                                            <p class="text">
+                                                Parents can regulate internet access with filtering solutions based on selected criteria. With filtering solutions, parents can regulate internet access and prevent minors from accessing e-gaming websites.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-privacy" role="tabpanel" aria-labelledby="v-pills-privacy-tab">
+                            <div class="aboutus-body" >
+                                <div class="article-content"> 
+                                    <h2 class="article-content-title">Privacy Policy </h2>
+
+                                    <div class="article-detail">
+                                        <div class="article-detail-content">
+                                            <p class="text">
+                                                Your privacy is important to us, and we are committed to protecting your personal information. We will be clear and open about why we collect your personal information and how we use it. Where you have choices or rights, we will explain these to you.
+                                            </p>
+                                            <p class="text">
+                                                This Privacy Policy explains how Baji uses your personal information when you are using one of our website.
+                                            </p>
+                                        </div>
+
+                                        <h4 class="article-detail-tile"> Who is in control of your information?</h4>
+
+                                        <div class="article-detail-content">
+                                            <p class="text">
+                                                Throughout this Privacy Policy, Baji together with our subsidiaries and affiliates (collectively, “we” or “us” or “our”) control the ways your Personal Data is collected and the purposes for which your Personal Data is used by Baji, acting as the “data controller” for the purposes of applicable European data protection legislation.
+                                            </p>
+                                        </div>
+
+                                        <h4 class="article-detail-tile"> Our Data Protection Officer </h4>
+
+                                        <div class="article-detail-content">
+                                            <p class="text">
+                                                If you have concerns or would like any further information about how Baji handles your personal information, you can contact our Data Protection Officer at info@baji.live.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-tnc" role="tabpanel" aria-labelledby="v-pills-tnc-tab">
+                            <div class="aboutus-body" >
+                                <div class="article-content"> 
+                                    <h2 class="article-content-title">Terms And Conditions </h2>
+
+                                    <div class="article-detail">
+                                        <div class="article-detail-content">
+                                            <p class="text">
+                                                These terms and conditions and the documents referred to below (the "Terms") apply to the use of the current website (the "Website") and its related or connected services (collectively, the "Service").
+                                            </p>
+                                            <p class="text">
+                                                You should carefully review these Terms as they contain important information concerning your rights and obligations concerning the use of the Website and form a binding legal agreement between you - our customer (the "Customer"), and us. By using this Website and/or accessing the Service, you, whether you are a guest or a registered user with an account (“Account”), agree to be bound by these Terms, together with any amendments, which may be published from time to time. If you do not accept these Terms, you should refrain from accessing the Service and using the Website.
+                                            </p>
+                                        </div>
+
+                                        <h4 class="article-detail-tile"> General Terms</h4>
+
+                                        <div class="article-detail-content">
+                                            <p class="text">
+                                                We reserve the right to revise and amend the Terms (including any documents referred to and linked to below) at any time. You should visit this page periodically to review the Terms and Conditions. Amendments will be binding and effective immediately upon publication on this Website.
+                                            </p>
+                                        </div>
+
+                                        <h4 class="article-detail-tile"> Your Obligations </h4>
+
+                                        <div class="article-detail-content">
+                                            <p class="text">
+                                                You are is over 18, or the legal age at which gambling, or gaming activities are allowed under the law or jurisdiction that applies to you. We reserve the right to request proof of age documents from you at any time.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+               
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Footer Section -->
+
+    <div class="site-footer">
+        <div class="sfooter-center">
+
+            <div class="sfooter-top row">
+                <div class="fsupport-col col-3">
+                    <div class="fsupport-icon">
+                        <img src="images/icon-24hr.png">
+                    </div>
+                    <div class="fsupport-detail">
+                        <h5>Customer Support</h5>
+                        <span>24 Hours Customer Service</span>
+                    </div>
+               </div>
+
+               <div class="fsupport-col col-3">
+                    <div class="fsupport-icon">
+                        <img src="images/icon-book.png">
+                    </div>
+
+                    <div class="fsupport-detail">
+                        <h5>New Member Guide</h5>
+                        <span>Check out FAQ and guides</span>
+                    </div>
+                </div>
+
+                <div class="fsupport-col col-3">
+                    <div class="fsupport-icon">
+                        <img src="images/icon-ambassador.png">
+                    </div>
+
+                    <div class="fsupport-detail">
+                        <h5>Brand Ambassador</h5>
+                        <span>Play with celebrity</span>
+                    </div>
+                </div>
+
+                <div class="fsupport-col col-3">
+                    <div class="android-img">
+
+                        <a href="#" target="_blank">
+                            <img src="images/android-en.png" >
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <img src="images/android-en.png" >
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="sfooter-sponsor">
+                <ul class="footer-partner-wrap">
+                    <li class="duty">
+                        <h5>Responsible Gaming</h5>
+                        <a style="cursor: pointer;" target="_blank" href="#">
+                            <img src="images/safe1.png">
+                        </a>
+                        <a style="cursor: pointer;" target="_blank" href="#">
+                            <img src="images/safe2.png">
+                        </a>
+                        <a style="cursor: pointer;" target="_blank" href="#">
+                            <img src="images/safe3.png">
+                        </a>
+                    </li>
+
+                    <li class="payment">
+                        <h5>Payment Method</h5>
+
+                        <a href="#">
+                            <img src="images/pay16.png">
+                        </a>
+
+                        <a href="#">
+                            <img src="images/pay22.png">
+                        </a>
+
+                        <a href="#">
+                            <img src="images/pay33.png">
+                        </a>
+
+                        <a href="#">
+                            <img src="images/pay34.png">
+                        </a>
+
+                        <a href="#">
+                            <img src="images/pay45.png">
+                        </a>
+
+                        <a href="#">
+                            <img src="images/pay59.png">
+                        </a>
+                            
+                        <a href="#">
+                            <img src="images/pay60.png">
+                        </a>
+
+                        <a href="#">
+                            <img src="images/pay61.png">
+                        </a>
+
+                        <a href="#">
+                            <img src="images/pay47.png">
+                        </a>
+                    </li>
+
+                    <li class="social-media">
+                        <h5>Follow Us</h5>
+
+                        <a href="#" target="_blank">
+                            <img src="images/facebook (1).png">
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <img src="images/Telegram.png">
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <img src="images/Twitter (1).png">
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <img src="images/instagram.png">
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <img src="images/Pinterest.png">
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <img src="images/Youtube.png">
+                        </a>
+                    </li>
+
+                    <li class="gaming-license">
+                        <h5>Gaming License</h5>
+                        <img src="images/gaming_license.png">
+                    </li>    
+                </ul>
+            </div>
+
+            <div class="footer-license">
+                <div class="license-cont">
+                    <h1 class="license-title">Top Betting Exchange Sites Bangladesh,
+                        India & South East Asia</h1>
+                    </h1>
+                    <p>A betting exchange is practically an online tool that is designed
+                        for gamblers to bet directly against each other and not involve
+                        any of the traditional bookmakers. Cricket Betting indicates two
+                        ways of betting in a cricket match. The first one is to bet on the
+                        overall outcome of a live cricket match. The other one is based on
+                        the live cricket score of a team in the first 6 overs.
+                        <br>
+                        Online betting has developed as a booming industry in South East
+                        Asia especially in Bangladesh and India, where the bettors get to
+                        choose from an exciting range of Top Betting Exchange Sites in
+                        Bangladesh, India and others South East Asia Region.
+                        <br>
+                        If you find this interesting and are in search of a reliable and
+                        safe Cricket Betting Sites Bangladesh and India, then you should
+                        enroll with us. Baji is a reputed online gambling site in entire
+                        Asia. We focus on not only cricket predictions but also other
+                        exciting online gaming products.
+                    </p>
+                </div>
+            </div>
+
+            <div class="sfooter-link">
+                <a href="index.html" class="sfooter-logo">
+                    <img src="images/logo_baji.png">
+                </a>
+
+                <div class="sfooter-group">
+                    <div class="link-wrap">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank">Affiliate</a>
+                            </li>
+
+                            <li>
+                                <a href="about.html" >Responsible Gaming</a>
+                            </li>
+
+                            <li>
+                                <a href="about.html" >About Us</a>
+                            </li>     
+                        </ul>
+
+                        <p>© 2023 Mr.Softtech Copyrights All Right Reservered</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+    <!-- Footer Section Closed-->
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+<script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+
+<script>
+
+    $(document).ready(function() {
+    // Owl Carousel
+    
+    var owl = $(".owl-carousel");
+    owl.owlCarousel({
+        items: 4,
+        margin: 10,
+        loop: false,
+        nav: true,
+        pagination: true,
+        mouseDrag: true,
+		touchDrag: true,
+		pullDrag: false,
+		freeDrag: false,
+    });
+    
+    });
+
+</script>
+
+<script>
+
+    $(".carousel").swipe({
+        swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+            if (direction == 'left') $(this).carousel('next');
+            if (direction == 'right') $(this).carousel('prev');
+
+            },
+            allowPageScroll: "vertical" 
+    });
+
+</script>
+
+
+<script>
+    $(()=>{
+  var createSlick = ()=>{
+    let slider = $(".slider-one");
+
+    slider.not('.slick-initialized').slick({
+      autoplay: false,
+      infinite: true,
+      dots: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            adaptiveHeight: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });	
+  }
+
+  createSlick();
+
+ $(window).on( 'resize orientationchange', createSlick );
+})
+</script>
+
+<script>
+        
+    const sliders = document.querySelectorAll('.sheader-menu ul ');
+
+    sliders.forEach(slider=>{
+        let mouseDown = false;
+        let startX, scrollLeft;
+
+        let startDragging = function(e) {
+            mouseDown = true;
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        };
+        let stopDragging = function(event) {
+            mouseDown = false;
+        };
+        slider.addEventListener('mousemove', (e)=>{
+            e.preventDefault();
+            if (!mouseDown) {
+                return;
+            }
+            const x = e.pageX - slider.offsetLeft;
+            const scroll = x - startX;
+            slider.scrollLeft = scrollLeft - scroll;
+        }
+        );
+        // Add the event listeners
+        slider.addEventListener('mousedown', startDragging, false);
+        slider.addEventListener('mouseup', stopDragging, false);
+        slider.addEventListener('mouseleave', stopDragging, false);
+    }
+    );
+
+</script>
+<script>
+    var i = 0, timeOut = 0;
+
+    //Left
+    $('#moreicon-left').on('mousedown touchstart', function (e) {
+        timeOut = setInterval(function(){
+            sliders.forEach(slider=>{
+                slider.scrollLeft = slider.scrollLeft - 30;
+            });
+        }, 50);
+    }).bind('mouseup mouseleave touchend', function() {
+        clearInterval(timeOut);
+    });
+
+    $('#moreicon-left').on('click', function (e) {
+        sliders.forEach(slider=>{
+            slider.scrollLeft = slider.scrollLeft - 60;
+        });
+    });
+
+    //Right
+    $('#moreicon-right').on('mousedown touchstart', function (e) {
+        timeOut = setInterval(function(){
+            sliders.forEach(slider=>{
+                slider.scrollLeft = slider.scrollLeft + 30;
+            });
+        }, 50);
+    }).bind('mouseup mouseleave touchend', function() {
+        clearInterval(timeOut);
+    });
+
+    $('#moreicon-right').on('click', function (e) {
+        sliders.forEach(slider=>{
+            slider.scrollLeft = slider.scrollLeft + 60;
+        });
+    });
+</script>
+
+<script>
+
+    $(".toggle-password").click(function() {
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        input = $(this).parent().find("input");
+        if (input.attr("type") == "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+    });  
+    
+</script>
+
+<script>
+
+    $(".toggle-password2").click(function() {
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        input = $(this).parent().find("input");
+        if (input.attr("type") == "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+    });  
+    
+</script>
+
+
+
+
+
+
+</html>
