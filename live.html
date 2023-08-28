@@ -311,8 +311,8 @@
 
                             </li>
 
-                            <li class="drop-box">
-                                <a href="#" class="nav-item">
+                            <li class="drop-box ">
+                                <a href="#" class="nav-item active">
                                     Casino
                                     <i class="fa-solid fa-angle-down"></i>
                                 </a>
@@ -848,9 +848,35 @@
         </div>
     </div>
 
+    <div class="scontent-search-bar">
+        <div class="scontent-search-center">
+            <div class="scontent-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="game-search" name="search" placeholder="Search Games">
+            </div>
+            <div class="scontent-sort">
+                <ul id="game-sort-wrap" class="sort-wrap">
+                    <li>Sort :</li>
+                    <li>
+                        <a class="btn-sort">Latest</a>
+                    </li>
+                    <li>
+                        <a class="btn-sort">Favorite</a>
+                    </li>
+                    <li>
+                        <a class="btn srt active">A-Z</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <div class="scontent-filter">
-      <div class="scontent-filter-center">
+        <div class="scontent-filter-center">
             <div class="scontent-filter-group">
+
+                <div class="scontent-filter-title">Games Filter</div>
+
                 <div class="scontent-filter-bar">
                     <label class="ck_filter animated active">
                         <input type="checkbox" name="inputFilter" value="sexy" checked>
@@ -867,21 +893,21 @@
                     </label>
 
                     <label class="ck_filter animated">
-                        <input type="checkbox" name="inputFilter" value="cat2" checked>
+                        <input type="checkbox" name="inputFilter" value="pp" checked>
                         <span class="checkmark"></span>
                         <img src="images/game-logo/pp.png">
                         <span>PP</span>
                     </label>
 
                     <label class="ck_filter animated">
-                        <input type="checkbox" name="inputFilter" value="cat3" checked>
+                        <input type="checkbox" name="inputFilter" value="venus" checked>
                         <span class="checkmark"></span>
                         <img src="images/game-logo/venus.png">
                         <span>Venus</span>
                     </label>
 
                     <label class="ck_filter animated">
-                        <input type="checkbox" name="inputFilter" value="cat4" checked>
+                        <input type="checkbox" name="inputFilter" value="pt" checked>
                         <span class="checkmark"></span>
                         <img src="images/game-logo/playtech.png">
                         <span>PT</span>
@@ -892,71 +918,158 @@
 
             <div class="sfilter-more"></div>
 
-       </div>
+        </div>
     </div>
 
-    <div class="sgame-content">
-        <div class="sgames-item">
+    <div class="site-games">
+        <div class="sgames-content">
 
-            <div class="ck_box">
-                <div class="ck_bx sexy" data-bs-toggle="modal" data-bs-target="#ck1">
-                    <img loading="lazy" src="images/games/1.jpg" style="width: 190px;">
-                    <h5>Evolution - Roulette</h5>
-                </div>
-
-                <div class="ck_bx evolution" data-bs-toggle="modal" data-bs-target="#ck2">
-                    <img loading="lazy" src="images/games/2.jpg" style="width: 190px;">
-                </div>
-
-                <div class="ck_bx cat1 cat2" data-bs-toggle="modal" data-bs-target="#ck3">
-                    <img loading="lazy" src="images/games/3.jpg" style="width: 190px;">
-                </div>
-
-                <div class="ck_bx cat2" data-bs-toggle="modal" data-bs-target="#ck4">
-                    <img loading="lazy" src="images/games/4.jpg" style="width: 190px;">
-                </div>
-
-                <div class="ck_bx cat3 cat1" data-bs-toggle="modal" data-bs-target="#ck5">
-                    <img loading="lazy" src="images/games/5.jpg" style="width: 190px;">
-                </div>
-
-                <div class="ck_bx cat4" data-bs-toggle="modal" data-bs-target="#ck6">
-                    <img loading="lazy" src="images/games/6.jpg" style="width: 190px;">
-                </div>
-
-                <div class="ck_bx cat4" data-bs-toggle="modal" data-bs-target="#ck7">
-                    <img loading="lazy" src="images/games/7.jpg" style="width: 190px;">
-                </div>
-
-                <div class="ck_bx cat4" data-bs-toggle="modal" data-bs-target="#ck7">
-                    <img loading="lazy" src="images/games/8.jpg" style="width: 190px;">
-                </div>
-
-                <div class="ck_bx cat4" data-bs-toggle="modal" data-bs-target="#ck7">
-                    <img loading="lazy" src="images/games/9.jpg" style="width: 190px;">
-                </div>
-
-                <div class="ck_bx cat4" data-bs-toggle="modal" data-bs-target="#ck7">
-                    <img loading="lazy" src="images/games/1.jpg" style="width: 190px;">
-                </div>
-
-                <div class="ck_bx cat4" data-bs-toggle="modal" data-bs-target="#ck7">
-                    <img loading="lazy" src="images/games/2.jpg" style="width: 190px;">
-                </div>
-
-                <div class="ck_bx cat4" data-bs-toggle="modal" data-bs-target="#ck7">
-                    <img loading="lazy" src="images/games/3.jpg" style="width: 190px;">
+            <div class="sgames-item sexy" data-bs-toggle="modal">
+                <img src="images/games/1.jpg" loading="lazy" class="lazy">
+                <h5>Sexy - Roulette </h5>
+                <div class="game-inner">
+                    <div class="sgames-hidden">
+                        <a href="#" class="btn-css2">
+                            <span>Play Game</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>        
+
+            <div class="sgames-item evolution" data-bs-toggle="modal">
+                <img src="images/games/2.jpg" loading="lazy" class="lazy">
+                <h5>Evolution - BlackjackA</h5>
+                <div class="game-inner">
+                    <div class="sgames-hidden">
+                        <a href="#" class="btn-css2">
+                            <span>Play Game</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sgames-item pp venus" data-bs-toggle="modal">
+                <img src="images/games/3.jpg" loading="lazy" class="lazy">
+                <h5>Venus - Big Jack</h5>
+                <div class="game-inner">
+                    <div class="sgames-hidden">
+                        <a href="#" class="btn-css2">
+                            <span>Play Game</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
             
-    
-        
+            <div class="sgames-item venus" data-bs-toggle="modal">
+                <img src="images/games/4.jpg" loading="lazy" class="lazy">
+                <h5>Venus - DragonTiger</h5>
+                <div class="game-inner">
+                    <div class="sgames-hidden">
+                        <a href="#" class="btn-css2">
+                            <span>Play Game</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
+            <div class="sgames-item pt" data-bs-toggle="modal">
+                <img src="images/games/5.jpg" loading="lazy" class="lazy">
+                <h5>PT - Poker King</h5>
+                <div class="game-inner">
+                    <div class="sgames-hidden">
+                        <a href="#" class="btn-css2">
+                            <span>Play Game</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sgames-item pp" data-bs-toggle="modal">
+                <img src="images/games/6.jpg" loading="lazy" class="lazy">
+                <h5>PP - BlackjackParty</h5>
+                <div class="game-inner">
+                    <div class="sgames-hidden">
+                        <a href="#" class="btn-css2">
+                            <span>Play Game</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sgames-item sexy" data-bs-toggle="modal">
+                <img src="images/games/7.jpg" loading="lazy" class="lazy">
+                <h5>Sexy - Auto Hall</h5>
+                <div class="game-inner">
+                    <div class="sgames-hidden">
+                        <a href="#" class="btn-css2">
+                            <span>Play Game</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sgames-item venus" data-bs-toggle="modal">
+                <img src="images/games/5.jpg" loading="lazy" class="lazy">
+                <h5>Venus - D-King</h5>
+                <div class="game-inner">
+                    <div class="sgames-hidden">
+                        <a href="#" class="btn-css2">
+                            <span>Play Game</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sgames-item pt pp" data-bs-toggle="modal">
+                <img src="images/games/9.jpg" loading="lazy" class="lazy">
+                <h5>PP - TOP Games</h5>
+                <div class="game-inner">
+                    <div class="sgames-hidden">
+                        <a href="#" class="btn-css2">
+                            <span>Play Game</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sgames-item venus" data-bs-toggle="modal">
+                <img src="images/games/1.jpg" loading="lazy" class="lazy">
+                <h5>Venus - Football </h5>
+                <div class="game-inner">
+                    <div class="sgames-hidden">
+                        <a href="#" class="btn-css2">
+                            <span>Play Game</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sgames-item sexy" data-bs-toggle="modal">
+                <img src="images/games/4.jpg" loading="lazy" class="lazy">
+                <h5>Sexy - Blackjack C</h5>
+                <div class="game-inner">
+                    <div class="sgames-hidden">
+                        <a href="#" class="btn-css2">
+                            <span>Play Game</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sgames-item evolution" data-bs-toggle="modal">
+                <img src="images/games/1.jpg" loading="lazy" class="lazy">
+                <h5>Evolution - Poker A</h5>
+                <div class="game-inner">
+                    <div class="sgames-hidden">
+                        <a href="#" class="btn-css2">
+                            <span>Play Game</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                
+        </div>        
     </div>
-
-
-
 
     <!-- Casino Content-->
 
@@ -1346,10 +1459,9 @@
         
     </script>
 
-
     <script type="text/javascript">
         $(document).ready(function () {
-            var games = $('.ck_box').children();
+            var games = $('.sgames-content').children();
 
             $('input[name="inputFilter"]').click(function () {
                 if ($(this).is(':checked')) {
@@ -1388,7 +1500,15 @@
         })
     </script>
 
+    <script>
+        $(document).ready(function() {
+    
+            $('.sfilter-more').click(function(){
+                $('.scontent-filter').toggleClass('active');
+            });
 
+            });
+    </script>
 
 
 
