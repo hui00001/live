@@ -858,13 +858,13 @@
                 <ul id="game-sort-wrap" class="sort-wrap">
                     <li>Sort :</li>
                     <li>
-                        <a class="btn-sort">Latest</a>
+                        <a class="btn-sort active">Latest</a>
                     </li>
                     <li>
                         <a class="btn-sort">Favorite</a>
                     </li>
                     <li>
-                        <a class="btn srt active">A-Z</a>
+                        <a class="btn-sort">A-Z</a>
                     </li>
                 </ul>
             </div>
@@ -1363,7 +1363,7 @@
         const sliders = document.querySelectorAll('.sheader-menu ul ');
 
         sliders.forEach(slider=>{
-            let mouseDown = false;
+            let mouseDown = false; 
             let startX, scrollLeft;
 
             let startDragging = function(e) {
