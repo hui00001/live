@@ -151,6 +151,57 @@
 
         <!-- MODAL CLOSED -->
 
+        <!-- MODAL DETAIL--> 
+        <div class="modal fade" id="detail1" role="dialog"  >
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 580px;">
+                <div class="modal-content ">
+    
+                    <div class="modal-detail-banner">
+                        <img src="images/Promotion/detail image.jpg">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" arial-label="Close" style="width: 50px;"></button>
+                    </div>
+    
+                    <div class="title-wrap">
+                        <h3 class="promotion_title">Endless Rewards</h3>
+                        <a class="btn-default-radius" href="register.html">
+                            Sign Up Now
+                        </a>
+                    </div>
+
+                    <div class="pop-inner">
+                        <div class="article">
+                            <p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">
+
+                                <b style="font-weight: normal;">
+                                    <span style="font-size:11pt;">
+                                        Embark on a global thrill ride from Monday to Friday with our 'Weekly Specials',
+                                        offering Reload bonuses, Cashback bonuses, and also rewards in Cash every week!
+                                    </span>
+                                </b>
+
+                                <br>
+                                <br>
+                                <br>
+
+                                <b style="font-weight: normal;">
+                                    <span style="font-size: 11pt;">
+                                        This promotion is available to all members.
+                                    </span>
+                                    <br>
+                                    <span style="font-size: 11pt;">
+                                        Promotion starts from 00:00 (GMT+6) on 21st August 2023.
+                                    </span>
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL DETAIL CLOSED -->
+
+
         <div class="site-wrap">
             <div class="site-header">
 
@@ -313,7 +364,7 @@
                                 </li>
 
                                 <li class="drop-box ">
-                                    <a href="#" class="nav-item active">
+                                    <a href="#" class="nav-item ">
                                         Casino
                                         <i class="fa-solid fa-angle-down"></i>
                                     </a>
@@ -733,7 +784,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="promotion.html" class="nav-item">
+                                    <a href="promotion.html" class="nav-item active">
                                         Promotion
                                     </a>
                                 </li>
@@ -840,255 +891,218 @@
 
             </div>
         </div>
-        <!-- Casino Content-->
+        <!-- Promotion Content-->
         <div class="content no-sidenav week-col">
             <div class="gamePage_main_banner" class="main-banner-wrap slot" title="casino banner">
                 <div class="main-slot-banner">
-                    <img src="images/livecasino.png">
+                    <img src="images/Promotion/promotion.png">
                 </div>
             </div>
         </div>
+        <div class="promo-search-bar">
+            <ul>
+                <div class="pmbox filter active" data-filter="all">
+                    <li>
+                        <a class="btn-css1">All</a>
+                    </li>
+                </div>
+                
+                <div class="pmbox filter" data-filter="cat0">
+                    <li>
+                        <a class="btn-css1">Welcome Offer</a>
+                    </li>
+                </div>
 
-        <div class="scontent-search-bar">
-            <div class="scontent-search-center">
-                <div class="scontent-search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" id="game-search" name="search" placeholder="Search Games">
+                <div class="pmbox filter" data-filter="cat1">
+                    <li>
+                        <a class="btn-css1">Slots</a>
+                    </li>
                 </div>
-                <div class="scontent-sort">
-                    <ul id="game-sort-wrap" class="sort-wrap">
-                        <li>Sort :</li>
-                        <li>
-                            <a class="btn-sort active" id="sortingLate">Latest</a>
-                        </li>
-                        <li>
-                            <a class="btn-sort" id="sortingFav">Favorite</a>
-                        </li>
-                        <li>
-                            <a class="btn-sort" id="sortingAZ">A-Z</a>
-                        </li>
-                    </ul>
+
+                <div class="pmbox filter" data-filter="cat2">
+                    <li>
+                        <a class="btn-css1">Casino</a>
+                    </li>
                 </div>
-            </div>
+
+                <div class="pmbox filter" data-filter="cat3">
+                    <li>
+                        <a class="btn-css1">Sports</a>
+                    </li>
+                </div>
+
+                <div class="pmbox filter" data-filter="cat4">
+                    <li>
+                        <a class="btn-css1">Fishing</a>
+                    </li>
+                </div>
+
+                <div class="pmbox filter" data-filter="cat5">
+                    <li>
+                        <a class="btn-css1">Table</a>
+                    </li>
+                </div>
+
+                <div class="pmbox filter" data-filter="cat6">
+                    <li>
+                        <a class="btn-css1">Arcade</a>
+                    </li>
+                </div>
+
+                <div class="pmbox filter" data-filter="cat7">
+                    <li>
+                        <a class="btn-css1">Others</a>
+                    </li>
+                </div>
+                
+            </ul>
         </div>
 
-        <div class="scontent-filter">
-            <div class="scontent-filter-center">
-                <div class="scontent-filter-group">
 
-                    <div class="scontent-filter-title">Games Filter</div>
-
-                    <div class="scontent-filter-bar">
-                        <label class="ck_filter animated active">
-                            <input type="checkbox" name="inputFilter" value="sexy" checked>
-                            <span class="checkmark"></span>
-                            <img src="images/game-logo/sexy.png">
-                            <span>Sexy</span>
-                        </label>
-
-                        <label class="ck_filter animated">
-                            <input type="checkbox" name="inputFilter" value="evolution" checked>
-                            <span class="checkmark"></span>
-                            <img src="images/game-logo/evo.png">
-                            <span>Evolution</span>
-                        </label>
-
-                        <label class="ck_filter animated">
-                            <input type="checkbox" name="inputFilter" value="pp" checked>
-                            <span class="checkmark"></span>
-                            <img src="images/game-logo/pp.png">
-                            <span>PP</span>
-                        </label>
-
-                        <label class="ck_filter animated">
-                            <input type="checkbox" name="inputFilter" value="venus" checked>
-                            <span class="checkmark"></span>
-                            <img src="images/game-logo/venus.png">
-                            <span>Venus</span>
-                        </label>
-
-                        <label class="ck_filter animated">
-                            <input type="checkbox" name="inputFilter" value="pt" checked>
-                            <span class="checkmark"></span>
-                            <img src="images/game-logo/playtech.png">
-                            <span>PT</span>
-                        </label>
-
+        <div class="site-promo">
+            <div class="promo-content">
+                <div class="promo-item cat0 cat1" data-bs-toggle="modal" data-bs-target="#promo1">
+                    <div class="promo-wrap">
+                        <img src="images/Promotion/1.jpg">
                     </div>
-                </div>
 
-                <div class="sfilter-more"></div>
+                    <div class="promo-detail">
+                        <div class="promo-notes">Long Term</div>
+                        <h5>
+                            WELCOME BONUS EN
+                        </h5>
+                        
+                        <p class="text" ui-key="description">Welcome Offer</p>
 
-            </div>
-        </div>
-
-        <div class="site-games">
-            <div class="sgames-content">
-
-                <div class="sgames-item sexy" data-bs-toggle="modal">
-                    <img src="images/games/1.jpg" loading="lazy" class="lazy">
-                    <h5 class="azAZ">Sexy - Roulette </h5>
-                    <span class="latest">999</span>
-                    <span class="favorite">true</span>
-                    <div class="game-inner">
-                        <div class="sgames-hidden">
-                            <a href="#" class="btn-css2">
-                                <span>Play Game</span>
-                            </a>
+                        <p class="time">
+                            <span >2023/07/26 00:00</span>to
+                            <span >2023/12/31 23:59</span>end
+                        </p>
+                        
+                        <div class="promo-button ">
+                            <a href="register.html" class="btn-css2">Signup</a>
+                            <a href="#" class="btn-css2 loader1" data-bs-toggle="modal" data-bs-target="#detail1">Detail</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="sgames-item evolution" data-bs-toggle="modal">
-                    <img src="images/games/2.jpg" loading="lazy" class="lazy">
-                    <h5 class="azAZ">Evolution - BlackjackA</h5>
-                    <span class="latest">998</span>
-                    <span class="favorite">true</span>
-                    <div class="game-inner">
-                        <div class="sgames-hidden">
-                            <a href="#" class="btn-css2">
-                                <span>Play Game</span>
-                            </a>
+                <div class="promo-item cat0" data-bs-toggle="modal" data-bs-target="#promo2">
+                    <div class="promo-wrap">
+                        <img src="images/Promotion/2.jpg">
+                    </div>
+
+                    <div class="promo-detail">
+                        <div class="promo-notes">Long Term</div>
+                        <h5>
+                            Changed English Title
+                        </h5>
+
+                        <p class="text" ui-key="description">Welcome Offer</p>
+
+                        <p class="time">
+                            <span >2023/07/26 00:00</span>to
+                            <span >2023/12/31 23:59</span>end
+                        </p>
+
+                        <div class="promo-button ">
+                            <a href="register.html" class="btn-css2">Signup</a>
+                            <a href="#" class="btn-css2 loader1" data-bs-toggle="modal" data-bs-target="#detail1">Detail</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="sgames-item pp venus" data-bs-toggle="modal">
-                    <img src="images/games/3.jpg" loading="lazy" class="lazy">
-                    <h5 class="azAZ">Venus - Big Jack</h5>
-                    <span class="latest">980</span>
-                    <span class="favorite">true</span>
-                    <div class="game-inner">
-                        <div class="sgames-hidden">
-                            <a href="#" class="btn-css2">
-                                <span>Play Game</span>
-                            </a>
+                <div class="promo-item cat2" data-bs-toggle="modal" data-bs-target="#promo1">
+                    <div class="promo-wrap">
+                        <img src="images/Promotion/3.jpg">
+                    </div>
+                    <div class="promo-detail">
+                        <div class="promo-notes">Long Term</div>
+                        <h5>
+                            ৳500 Referral Bonus
+                        </h5>
+
+                        <p class="text" ui-key="description">Welcome Offer</p>
+
+                        <p class="time">
+                            <span >2023/07/26 00:00</span>to
+                            <span >2023/12/31 23:59</span>end
+                        </p>
+
+                        <div class="promo-button ">
+                            <a href="register.html" class="btn-css2">Signup</a>
+                            <a href="#" class="btn-css2 loader1" data-bs-toggle="modal" data-bs-target="#detail1">Detail</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="sgames-item venus" data-bs-toggle="modal">
-                    <img src="images/games/4.jpg" loading="lazy" class="lazy">
-                    <h5 class="azAZ">Venus - DragonTiger</h5>
-                    <span class="latest">992</span>
-                    <span class="favorite">false</span>
-                    <div class="game-inner">
-                        <div class="sgames-hidden">
-                            <a href="#" class="btn-css2">
-                                <span>Play Game</span>
-                            </a>
+                <div class="promo-item cat1" data-bs-toggle="modal" data-bs-target="#promo2">
+                    <div class="promo-wrap">
+                        <img src="images/Promotion/4.jpg">
+                    </div>
+                    <div class="promo-detail">
+                        <div class="promo-notes">Long Term</div>
+                        <h5>
+                            1% Cash Rebate
+                        </h5>
+
+                        <p class="text" ui-key="description">Welcome Offer</p>
+
+                        <p class="time">
+                            <span >2023/07/26 00:00</span>to
+                            <span >2023/12/31 23:59</span>end
+                        </p>
+
+                        <div class="promo-button ">
+                            <a href="register.html" class="btn-css2">Signup</a>
+                            <a href="#" class="btn-css2 loader1" data-bs-toggle="modal" data-bs-target="#detail1">Detail</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="sgames-item pt" data-bs-toggle="modal">
-                    <img src="images/games/5.jpg" loading="lazy" class="lazy">
-                    <h5 class="azAZ">PT - Poker King</h5>
-                    <span class="latest">989</span>
-                    <span class="favorite">false</span>
-                    <div class="game-inner">
-                        <div class="sgames-hidden">
-                            <a href="#" class="btn-css2">
-                                <span>Play Game</span>
-                            </a>
+                <div class="promo-item cat2" data-bs-toggle="modal" data-bs-target="#promo1">
+                    <div class="promo-wrap">
+                        <img src="images/Promotion/5.jpg">
+                    </div>
+                    <div class="promo-detail">
+                        <div class="promo-notes">Long Term</div>
+                        <h5>
+                            Unlimited Cash Rebate
+                        </h5>
+
+                        <p class="text" ui-key="description">Welcome Offer</p>
+
+                        <p class="time">
+                            <span >2023/07/26 00:00</span>to
+                            <span >2023/12/31 23:59</span>end
+                        </p>
+
+                        <div class="promo-button ">
+                            <a href="register.html" class="btn-css2">Signup</a>
+                            <a href="#" class="btn-css2 loader1" data-bs-toggle="modal" data-bs-target="#detail1">Detail</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="sgames-item pp" data-bs-toggle="modal">
-                    <img src="images/games/6.jpg" loading="lazy" class="lazy">
-                    <h5 class="azAZ">PP - BlackjackParty</h5>
-                    <span class="latest">979</span>
-                    <span class="favorite">false</span>
-                    <div class="game-inner">
-                        <div class="sgames-hidden">
-                            <a href="#" class="btn-css2">
-                                <span>Play Game</span>
-                            </a>
-                        </div>
+                <div class="promo-item cat3" data-bs-toggle="modal" data-bs-target="#promo2">
+                    <div class="promo-wrap">
+                        <img src="images/Promotion/6.jpg">
                     </div>
-                </div>
+                    <div class="promo-detail">
+                        <div class="promo-notes">Long Term</div>
+                        <h5>
+                            Unlimited Sports Cash Rebate
+                        </h5>
 
-                <div class="sgames-item sexy" data-bs-toggle="modal">
-                    <img src="images/games/7.jpg" loading="lazy" class="lazy">
-                    <h5 class="azAZ">Sexy - Auto Hall</h5>
-                    <span class="latest">959</span>
-                    <span class="favorite">false</span>
-                    <div class="game-inner">
-                        <div class="sgames-hidden">
-                            <a href="#" class="btn-css2">
-                                <span>Play Game</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                        <p class="text" ui-key="description">Welcome Offer</p>
 
-                <div class="sgames-item venus" data-bs-toggle="modal">
-                    <img src="images/games/5.jpg" loading="lazy" class="lazy">
-                    <h5 class="azAZ">Venus - D-King</h5>
-                    <span class="latest">899</span>
-                    <span class="favorite">true</span>
-                    <div class="game-inner">
-                        <div class="sgames-hidden">
-                            <a href="#" class="btn-css2">
-                                <span>Play Game</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                        <p class="time">
+                            <span >2023/07/26 00:00</span>to
+                            <span >2023/12/31 23:59</span>end
+                        </p>
 
-                <div class="sgames-item pt pp" data-bs-toggle="modal">
-                    <img src="images/games/9.jpg" loading="lazy" class="lazy">
-                    <h5 class="azAZ">PP - TOP Games</h5>
-                    <span class="latest">799</span>
-                    <span class="favorite">true</span>
-                    <div class="game-inner">
-                        <div class="sgames-hidden">
-                            <a href="#" class="btn-css2">
-                                <span>Play Game</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="sgames-item venus" data-bs-toggle="modal">
-                    <img src="images/games/1.jpg" loading="lazy" class="lazy">
-                    <h5 class="azAZ">Venus - Football </h5>
-                    <span class="latest">529</span>
-                    <span class="favorite">true</span>
-                    <div class="game-inner">
-                        <div class="sgames-hidden">
-                            <a href="#" class="btn-css2">
-                                <span>Play Game</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="sgames-item sexy" data-bs-toggle="modal">
-                    <img src="images/games/4.jpg" loading="lazy" class="lazy">
-                    <h5 class="azAZ">Sexy - Blackjack C</h5>
-                    <span class="latest">888</span>
-                    <span class="favorite">true</span>
-                    <div class="game-inner">
-                        <div class="sgames-hidden">
-                            <a href="#" class="btn-css2">
-                                <span>Play Game</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="sgames-item evolution" data-bs-toggle="modal">
-                    <img src="images/games/1.jpg" loading="lazy" class="lazy">
-                    <h5 class="azAZ">Evolution - Poker A</h5>
-                    <span class="latest">779</span>
-                    <span class="favorite">false</span>
-                    <div class="game-inner">
-                        <div class="sgames-hidden">
-                            <a href="#" class="btn-css2">
-                                <span>Play Game</span>
-                            </a>
+                        <div class="promo-button ">
+                            <a href="register.html" class="btn-css2">Signup</a>
+                            <a href="#" class="btn-css2 loader1" data-bs-toggle="modal" data-bs-target="#detail1">Detail</a>
                         </div>
                     </div>
                 </div>
@@ -1096,7 +1110,9 @@
             </div>
         </div>
 
-        <!-- Casino Content-->
+       
+
+        <!-- Promotion Content-->
         <!-- Footer Section -->
 
         <div class="site-footer">
@@ -1550,6 +1566,25 @@
 
             });
         </script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.pmbox').click(function () {
+                    const value = $(this).attr('data-filter');
+                    if (value == 'all') {
+                        $('.promo-item').show('1000');
+                    }
+                    else {
+                        $('.promo-item').not('.' + value).hide('1000');
+                        $('.promo-item').filter('.' + value).show('1000');
+                    }
+                })
+
+                $('.pmbox').click(function () {
+                    $(this).addClass('active').siblings().removeClass('active');
+                })
+            })
+        </script>
         
     </body>
-</html>
+</html>     
